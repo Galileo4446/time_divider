@@ -3,8 +3,89 @@
 <head>
 <meta charset = “utf-8″>
 <title>らくらく分割計算くん</title>
+<script src="js/time_divider.js"></script>
+<link rel="stylesheet" type="text/css" href="time_divider.css">
+
 </head>
 <body>
-  <script type="text/javascript" src="time_divider.js"></script>
+
+  <div class="main">
+
+    <h1>らくらく分割計算くん！</h1>
+    <form name="start">
+      <input type="radio" name="start" value="1" id="1start">
+      <label for="1start">1</label>
+      <input type="radio" name="start" value="2" id="2start">
+      <label for="2start">2</label>
+      <input type="radio" name="start" value="20" id="2dstart">
+      <label for="2dstart">2'</label>
+      <input type="radio" name="start" value="3" id="3start">
+      <label for="3start">3</label>
+      <input type="radio" name="start" value="4" id="4start">
+      <label for="4start">4</label>
+      <input type="radio" name="start" value="5" id="5start">
+      <label for="5start">5</label>
+      <input type="radio" name="start" value="6" id="6start">
+      <label for="6start">6</label>
+      <input type="radio" name="start" value="7" id="7start">
+      <label for="7start">7</label>
+      <span>から</span>
+    </form>
+
+    <form name="end">
+      <input type="radio" name="end" value="1" id="1end">
+      <label for="1end">1</label>
+      <input type="radio" name="end" value="2" id="2end">
+      <label for="2end">2</label>
+      <input type="radio" name="end" value="20" id="2dend">
+      <label for="2dend">2'</label>
+      <input type="radio" name="end" value="3" id="3end">
+      <label for="3end">3</label>
+      <input type="radio" name="end" value="4" id="4end">
+      <label for="4end">4</label>
+      <input type="radio" name="end" value="5" id="5end">
+      <label for="5end">5</label>
+      <input type="radio" name="end" value="6" id="6end">
+      <label for="6end">6</label>
+      <input type="radio" name="end" value="7" id="7end">
+      <label for="7end">7</label>
+      <span>まで</span>
+    </form>
+
+    <form name="split">
+      <input type="radio" name="split" value="1" id="1split">
+      <input type="radio" name="split" value="2" id="2split">
+      <label for="2split">2</label>
+      <input type="radio" name="split" value="3" id="3split">
+      <label for="3split">3</label>
+      <input type="radio" name="split" value="4" id="4split">
+      <label for="4split">4</label>
+      <input type="radio" name="split" value="5" id="5split">
+      <label for="5split">5</label>
+      <input type="radio" name="split" value="6" id="6split">
+      <label for="6split">6</label>
+      <input type="radio" name="split" value="7" id="7split">
+      <label for="7split">7</label>
+      <span>分割</span>
+    </form>
+
+    <form>
+      <input type="button" value="計算する" onclick="main();"/>
+      <input type="button" class="reset" value="リセット" onclick="resetRadio();"/>
+    </form>
+
+
+  </div>
+
+
+  <div id="ans" class="ans"></div>
+
+  <!-- <div class="footer">
+    <iframe src="https://open.spotify.com/embed/user/313gg2dvr3e5novu7sdyvthn5r2i/playlist/0IExRFnn92tWQa7bGpU2ek" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div> -->
+
+
+
+
 </body>
 </html>
