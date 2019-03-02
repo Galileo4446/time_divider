@@ -39,7 +39,7 @@ function main() {
 
   if (start == 0 || end == 0 || split == 0) {
     ans.innerHTML = "すべて選択してください！";
-  }else if (unit_time < 0) {
+  }else if (unit_time <= 0) {
     ans.innerHTML = "始まりと終わりが逆になっています。";
   }
 
