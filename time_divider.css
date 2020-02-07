@@ -7,7 +7,7 @@ body {
 h1 {
   position: relative;
   color: white;
-  background: #67c5ff;
+  background: #40739e;
   line-height: 1.4;
   padding: 0.5em 0.5em 0.5em 0.5em;
   border-radius: 20px;
@@ -29,7 +29,7 @@ input[type=radio]{
 }
 
 input[type=radio]:checked + label{
-  background: #67c5ff;
+  background: #40739e;
   color: white;
 }
 
@@ -38,8 +38,8 @@ label{
   padding: 0.3em 0.7em;
   margin: 1em 0em;
   text-decoration: none;
-  color: #67c5ff;
-  border: solid 2px #67c5ff;
+  color: #40739e;
+  border: solid 2px #40739e;
   border-radius: 30px;
   transition: .2s;
   font-size: 2.6em;
@@ -50,8 +50,8 @@ input[type=button]{
   padding: 0.5em 1.8em;
   margin: 1em 1em 0em 0em;
   text-decoration: none;
-  color: #67c5ff;
-  border: solid 2px #67c5ff;
+  color: #40739e;
+  border: solid 2px #40739e;
   border-radius: 30px;
   transition: .4s;
   font-size: 3em;
@@ -68,6 +68,6 @@ input[class=reset]{
 .ans{
   padding: 0.5em 1.5em;
   display: table;
-  color: #67c5ff;
+  color: #40739e;
   font-size: 2em;
 }
