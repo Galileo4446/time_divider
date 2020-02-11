@@ -137,3 +137,32 @@ function resetRadio() {
 
 
 }
+
+function setColor() {
+  var color;
+  var colorBase;
+  var colorType;
+
+  colorType = document.getElementById("colorType").value;
+  if (colorType=='dark') {
+    color = '#ecf7ff';
+    colorBase = '#120d09';
+  } else if (colorType=='blue') {
+    color = '#181818';
+    colorBase = '#3062ba';
+  } else if (colorType=='classic') {
+    color = '#7F3706';
+    colorBase = '#D0C2AD';
+  } else if (colorType=='mint') {
+    color = '#7d4845';
+    colorBase = '#88b8bb';
+  } else {
+    color = '#40739e';
+    colorBase = '#ffffff';
+  }
+
+  document.documentElement.style.setProperty('--main-color', color);
+  document.documentElement.style.setProperty('--main-base-color', colorBase);
+
+  console.log(colorType);
+};

@@ -1,13 +1,22 @@
+:root {
+  --main-base-color: #ffffff;
+  --main-color: #40739e;
+  --test-color: #111111;
+  --test-color-base: #555555;
+
+}
+
 body {
   font-family: sans-serif;
+  background-color: var(--main-base-color);
 }
 
 
 
 h1 {
   position: relative;
-  color: white;
-  background: #40739e;
+  color: var(--main-base-color);
+  background: var(--main-color);
   line-height: 1.4;
   padding: 0.5em 0.5em 0.5em 0.5em;
   border-radius: 20px;
@@ -21,7 +30,8 @@ h1 {
 }
 
 span {
-  font-size: 2em
+  font-size: 2em;
+  color: var(--main-color);
 }
 
 input[type=radio]{
@@ -29,8 +39,8 @@ input[type=radio]{
 }
 
 input[type=radio]:checked + label{
-  background: #40739e;
-  color: white;
+  background: var(--main-color);
+  color: var(--main-base-color);
 }
 
 label{
@@ -38,8 +48,8 @@ label{
   padding: 0.3em 0.7em;
   margin: 1em 0em;
   text-decoration: none;
-  color: #40739e;
-  border: solid 2px #40739e;
+  color: var(--main-color);
+  border: solid 2px var(--main-color);
   border-radius: 30px;
   transition: .2s;
   font-size: 2.6em;
@@ -50,24 +60,24 @@ input[type=button]{
   padding: 0.5em 1.8em;
   margin: 1em 1em 0em 0em;
   text-decoration: none;
-  color: #40739e;
-  border: solid 2px #40739e;
+  color: var(--main-color);
+  border: solid 2px var(--main-color);
   border-radius: 30px;
   transition: .4s;
   font-size: 3em;
-  background: #ffffff;
+  background: var(--main-base-color);
 
 }
 
 input[class=reset]{
-  color: #c8d6e5;
-  border: solid 2px #c8d6e5;
+  color: #535c68;
+  border: solid 2px #535c68;
 
 }
 
 .ans{
   padding: 0.5em 1.5em;
   display: table;
-  color: #40739e;
+  color: var(--main-color);
   font-size: 2em;
 }
