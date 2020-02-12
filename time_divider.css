@@ -75,6 +75,11 @@ input[class=reset]{
 
 }
 
+select{
+  font-size:2em;
+  border:1px;
+}
+
 .ans{
   padding: 0.5em 1.5em;
   display: table;
