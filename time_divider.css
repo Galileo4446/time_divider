@@ -1,17 +1,12 @@
 :root {
   --main-base-color: #ffffff;
   --main-color: #40739e;
-  --test-color: #111111;
-  --test-color-base: #555555;
-
 }
 
 body {
   font-family: sans-serif;
   background-color: var(--main-base-color);
 }
-
-
 
 h1 {
   position: relative;
@@ -22,8 +17,6 @@ h1 {
   border-radius: 20px;
   width: 25em;
 }
-
-
 
 .main {
   padding: 0.3em 3em;
@@ -66,13 +59,11 @@ input[type=button]{
   transition: .4s;
   font-size: 3em;
   background: var(--main-base-color);
-
 }
 
 input[class=reset]{
   color: #535c68;
   border: solid 2px #535c68;
-
 }
 
 select{
